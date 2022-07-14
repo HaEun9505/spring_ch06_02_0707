@@ -6,15 +6,13 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		//Container »ı¼º - ApplicationConfig.class(JavaÅ¬·¡½º¸í)
+		//Container ìƒì„± - ApplicationConfig.class(Javaí´ë˜ìŠ¤ëª…)
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-		Student student1 = ctx.getBean("student1",Student.class);
 		
-		System.out.println("ÀÌ¸§ : "+ student1.getName());
-		
-		Student student2 = ctx.getBean("student2",Student.class);
-		
-		System.out.println("ÀÌ¸§ : "+ student2.getName());
+		Student student1 = ctx.getBean("student1", Student.class);
+		System.out.println("ì´ë¦„ : " + student1.getName());
+	
+		Student student2 = ctx.getBean("student2", Student.class);
+		System.out.println("ì´ë¦„ : " + student2.getName());
 	}
-
 }
